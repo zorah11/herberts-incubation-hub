@@ -520,6 +520,71 @@ p {
   gap: 1.2rem;
   align-items: start;
 }
+.support-network {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr 1fr;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  margin-bottom: 4rem;
+}
+.support-card {
+  padding: 2.2rem 2rem 2.4rem 0;
+}
+.support-card + .support-card {
+  border-left: 1px solid rgba(255, 255, 255, 0.24);
+  padding-left: 2rem;
+}
+.support-type {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--lime);
+}
+.support-card h3 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  margin: 0.7rem 0;
+}
+.support-card p {
+  color: #c9d9cc;
+}
+.support-card a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid var(--lime);
+  padding-bottom: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.support-strip {
+  padding: clamp(4rem, 7vw, 7rem) var(--pad);
+  background: var(--ink);
+  color: white;
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: clamp(3rem, 7vw, 8rem);
+}
+.support-strip h2 {
+  margin: 0.7rem 0 0;
+}
+.support-strip-links {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+.support-strip-links a {
+  display: block;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  font: 400 clamp(1.15rem, 2vw, 1.7rem) var(--display);
+}
+.support-strip-links span {
+  display: block;
+  color: var(--lime);
+  font: 600 0.6rem var(--body);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.35rem;
+}
 .recognition-card {
   margin: 0;
   background: var(--cream);
@@ -1073,6 +1138,18 @@ p {
   }
   .recognition-heading {
     grid-template-columns: 1fr;
+  }
+  .support-network,
+  .support-strip {
+    grid-template-columns: 1fr;
+  }
+  .support-card + .support-card {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+    padding-left: 0;
+  }
+  .support-strip {
+    gap: 2rem;
   }
   .recognition-grid {
     grid-template-columns: 1fr 1fr;
