@@ -1,14 +1,18 @@
-# Herbert's Incubation Hub sample website
+# Herbert's Incubation Hub website
 
-Static, multi-page client-review website for HIH. Open `index.html` locally or publish the repository root with GitHub Pages.
+Official portfolio website for Herbert's Incubation Hub (HIH), based in Mpigi, Uganda.
 
-All photographs and service/project descriptions are illustrative placeholders. Replace them with client-approved material before treating the site as an official business profile.
+The site presents four connected enterprise areas: avocado bio-upcycling, water restoration,
+commercial livestock operations, and community agroforestry. It is a static multi-page build
+prepared for GitHub Pages.
 
 ## Structure
 
-- `index.html` — home page
-- `pages/` — About, Services, Projects, Gallery and Contact
-- `css/` — shared styling
-- `js/` — navigation, scroll reveals, gallery filtering/lightbox and email-form behavior
-- `images/` — generated sample photography
-- `404.html` — custom not-found page
+- `index.html` — home and enterprise overview
+- `pages/about.html` — organisation and founder profile
+- `pages/services.html` — integrated ventures
+- `pages/projects.html` — documented project areas
+- `pages/gallery.html` — filterable field gallery with lightbox
+- `pages/contact.html` — contact information and email form
+- `css/styles.css` — responsive visual system
+- `js/main.js` — navigation, motion, gallery and form interactions
