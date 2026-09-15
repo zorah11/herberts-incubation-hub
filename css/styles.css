@@ -389,6 +389,56 @@ p {
   align-items: end;
   background: var(--gold);
 }
+.reference-section {
+  padding: clamp(5rem, 9vw, 9rem) var(--pad);
+  background: var(--cream);
+}
+.reference-intro {
+  display: grid;
+  grid-template-columns: 0.55fr 1fr 0.7fr;
+  gap: clamp(2rem, 5vw, 6rem);
+  align-items: end;
+  margin-bottom: 3.5rem;
+}
+.reference-intro h2 {
+  margin: 0;
+}
+.reference-intro > p:last-child {
+  color: var(--muted);
+}
+.reference-links {
+  border-top: 1px solid var(--line);
+}
+.reference-link {
+  display: grid;
+  grid-template-columns: 0.45fr 1.3fr auto;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  transition:
+    padding 0.25s,
+    color 0.25s;
+}
+.reference-link:hover {
+  padding-left: 1rem;
+  color: var(--green);
+}
+.reference-link span {
+  font-size: 0.67rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.reference-link strong {
+  font: 400 clamp(1.3rem, 2vw, 2rem) / 1.2 var(--display);
+}
+.reference-link i {
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
 .page-hero {
   min-height: 65vh;
   padding: clamp(5rem, 10vw, 9rem) var(--pad);
@@ -1012,6 +1062,15 @@ p {
   .video-heading {
     grid-template-columns: 1fr;
   }
+  .reference-intro {
+    grid-template-columns: 1fr;
+  }
+  .reference-link {
+    grid-template-columns: 1fr auto;
+  }
+  .reference-link span {
+    grid-column: 1/-1;
+  }
   .recognition-heading {
     grid-template-columns: 1fr;
   }
@@ -1091,6 +1150,12 @@ p {
   }
 }
 @media (max-width: 520px) {
+  .reference-link {
+    grid-template-columns: 1fr;
+  }
+  .reference-link i {
+    margin-top: 0.25rem;
+  }
   .recognition-grid {
     grid-template-columns: 1fr;
   }
